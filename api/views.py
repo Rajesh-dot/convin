@@ -95,7 +95,7 @@ def GoogleCalendarRedirectView(request):
     else:
         for events_list in events['items']:
             events_list_append.append(events_list)
-            return Response({"events": events_list_append})
+        return Response({"events": events_list_append})
     return Response({"error": "calendar event aren't here"})
 
 
